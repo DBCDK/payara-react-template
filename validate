@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "### testing payara-react project ###"
+
+mvn verify || exit 1

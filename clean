@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+echo "### cleaning payara-react project ###"
+
+mvn clean
+git pull --ff-only
+docker rm -f payara-react-service &>/dev/null || true
+exit 0

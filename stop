@@ -1,0 +1,3 @@
+echo "### Stopping payara-react service docker ###"
+
+docker stop payara-react-service || exit 1
