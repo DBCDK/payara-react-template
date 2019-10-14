@@ -64,7 +64,7 @@ module.exports = {
                 target: {
                     host: "localhost",
                     protocol: "http:",
-                    port: 10222
+                    port: 8080
                 }
             }
         }
