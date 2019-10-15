@@ -10,7 +10,7 @@ docker run --rm --name payara-react-service -d -e JAVA_MAX_HEAP_SIZE=2G -e INSTA
 
 attempts=0
 max_attempts=60
-until $(curl --output /dev/null --silent --head --fail http://localhost:${payara_react_service_port}/status); do
+until $(curl --output /dev/null --silent --head --fail http://localhost:${payara_react_service_port}/api/status); do
     if [[ ${attempts} -eq ${max_attempts} ]]; then
         break
     fi
@@ -22,5 +22,5 @@ done
 
 echo ""
 echo "### Status for payara-react service ###"
-curl -vs http://localhost:${payara_react_service_port}/status
+curl -vs http://localhost:${payara_react_service_port}/api/status
 echo ""

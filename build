@@ -13,6 +13,6 @@ case "$1" in
         echo "### building payara-react project ###"
         echo "### Look for build artifacts in target/ ###"
 
-        mvn compile -Dmaven.test.skip=true || exit 1
+        mvn package -Dmaven.test.skip=true || exit 1
         ;;
 esac
