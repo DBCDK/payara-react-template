@@ -1,4 +1,4 @@
-#Payara React Example
+# Payara React Example
 The purpose of this project is to serve as best practice example for how metascrum structures web gui projects based on react.
 
 ### Configuration
