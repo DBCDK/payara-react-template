@@ -8,7 +8,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class PayaraReactServiceTest {
 
     @Test
-    public void dummy() {
+    public void testDummy() {
         assertThat(true, is(true));
     }
 
